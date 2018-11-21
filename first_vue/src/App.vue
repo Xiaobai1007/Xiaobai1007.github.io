@@ -1,0 +1,74 @@
+<template>
+	<div id="app">
+		<comment></comment>
+	</div>
+</template>
+
+<script>
+	import commentComp from './components/js/comment-comp.vue'
+
+	export default {
+		name: 'app',
+		components: {
+			comment:commentComp
+		}
+	}
+</script>
+
+<style>
+	#app {
+		font-family: 'Avenir', Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		color: #2c3e50;
+		margin-top: 60px;
+	}
+	#app {
+	    width: 400px;
+	    padding: 2em;
+	    margin: 2em auto;
+	    border: 1px solid #e0e0e0;
+	    border-radius: 1em;
+	}
+	.cinput {
+	    margin-bottom: 1em;
+	}
+	label {
+	    display: flex;
+	    margin: 1em 0;
+	}
+	label span {
+	    flex-basis: 100px;
+	}
+	input, textarea {
+	    flex: 1;
+	}
+	.cinput footer {
+	    text-align: right;
+	}
+	.cinput button {
+	    border: none;
+	    background-color: orange;
+	    padding: .4em 1em;
+	    color: white;
+	    font-size: 16px;
+	    border-radius: 3px;
+	    box-shadow: 1px 1px 1px #e0e0e0;
+	}
+	
+	
+	.comment {
+	    padding: 1em;
+	    border-bottom: 1px solid #f0f0f0;
+	    display: flex;
+	}
+	.comment-author {
+	    color: steelblue;
+	    flex-basis: 80px;
+	}
+	.comment-delete {
+	    margin-left: auto;
+	}
+	
+</style>
